@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_Task1" Id="{da98ec69-91f1-4aa5-824a-3b8a4bd16992}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	dtCurrentDt : DATE_AND_TIME := DT#2023-02-14-15:24:00;
+	tVariable : TIME := T#5S;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

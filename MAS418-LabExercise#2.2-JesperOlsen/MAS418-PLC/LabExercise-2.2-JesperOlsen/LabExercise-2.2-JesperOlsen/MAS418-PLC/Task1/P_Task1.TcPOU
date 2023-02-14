@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="P_Task1" Id="{dda4fc90-c7e6-4e01-bde5-5075ee88cc01}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM P_Task1
+VAR
+	pPointer : POINTER TO DATE_AND_TIME := ADR(GVL_Task1.dtCurrentDt);
+	tReference  : REFERENCE TO TIME REF=GVL_Task1.tVariable;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[pPointer^ := DT#2023-02-08-15:31:19;
+tReference := T#7S;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
